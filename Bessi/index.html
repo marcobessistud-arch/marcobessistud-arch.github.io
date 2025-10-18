@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Nuovo evento:</h1>
+    <br>
+    <form id="formEventi">
+        EVENTO: <br> <input type="text" id="evento" required> <br>
+        DATA: <br><input type="date" id="data" required> <br> 
+        CATEGORIA: 
+        <div id="immagini"> <img src="lavoro.png" width="20%"> <img src="casa.png" width="20%"> <img src="tempoLib.png" width="20%"> <img src="famiglia.png" width="20%"></div>
+        
+        <button id="bottone_centrato" type="button">REGISTRA</button>
+    </form>
+    <button type="button" id="view">VISUALIZZA TUTTO</button>
+    <button type="button" id="visualizza">VISUALIZZA PER CATEGORIA</button>
+    <div id="risultato"></div>
+    <script src="script.js"></script>
+</body>
+</html>
