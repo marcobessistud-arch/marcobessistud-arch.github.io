@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCOLO AREA RETTANGOLO</title> 
+</head>
+<body style="background-color: blue;">
+    <h1 style = "text-align: center" > CALCOLO AREA RETTANGOLO </h1> 
+    <p>Scrivi la base</p>
+    <input type="number" step=0.1 id="base">
+    <p>Scrivi l'altezza</p>
+    <input type="number" step="0.1" id="altezza">
+    <button onclick="calcolo()"> Calcola </button>
+    <p id="risultato"> </p>
+    <p id="cat"> </p>
+    <script>
+        let b, a, area
+        function calcolo(){
+            b = document.getElementById("base").value;
+            if(b<=0)
+                alert("Errore")
+            a = document.getElementById("altezza").value;
+            if(a<=0)
+                alert("Errore")
+            area = b*a
+            document.getElementById("risultato").innerHTML = "L'area è: " + area.toFixed("2");
+        }
+    </script>
+</body>
+</html>
